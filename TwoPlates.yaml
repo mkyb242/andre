@@ -1,0 +1,82 @@
+Problem Type:
+    Type: TwoPlates
+Domains:
+    Top Plate:
+        Geometry:
+            Thickness (Y): 0.4
+            Width (X): 10.0
+            Pos: 3
+        Material:
+            Thermal Conductivity X: 3
+            Thermal Conductivity Y: 3
+            Density: 3
+            Specific Heat: 3
+        Mesh:
+            Number of Elements in X: 10
+            Number of Elements in Y: 10
+        Boundary Condition:
+            Left Edge:
+                Temperature: 3
+            Top Edge:
+                Temperature: 3
+            Right Edge:
+                Temperature: 3
+            Bottom Edge:
+                Horizontal asperity ratio: 3
+                Vertical asperity ratio: 3
+        Initial Condition:
+            Initial Temperature: 3
+        
+    Bottom Plate:
+        Geometry:
+            Thickness (Y): 0.4
+            Width (X): 10.0
+            Pos: 1
+        Material: 
+            Thermal Conductivity X: 1
+            Thermal Conductivity Y: 1
+            Density: 1
+            Specific Heat: 1
+        Mesh:
+            Number of Elements in X: 10
+            Number of Elements in Y: 10
+        Boundary Condition:
+            Left Edge:
+                Temperature: 1
+            Bottom Edge:
+                Temperature: 1
+            Right Edge:
+                Temperature: 1 
+            Top Edge:
+                Horizontal asperity ratio: 1
+                Vertical asperity ratio: 1
+        Initial Condition: 
+            Initial Temperature: 1
+        
+    Middle Plate:
+        Geometry:
+            Thickness (Y): 0.01
+            Width (X): 10.0
+            Pos: 2
+        Material:
+            Thermal Conductivity X: 2
+            Thermal Conductivity Y: 2
+            Density: 2
+            Specific Heat: 2        
+        Mesh:
+            Number of Elements in X: 10
+            Number of Elements in Y: 1
+        Boundary Condition:                
+            Top Edge:
+                Horizontal asperity ratio: 2
+                Vertical asperity ratio: 2
+            Bottom Edge:
+                Horizontal asperity ratio: 2
+                Vertical asperity ratio: 2
+        Initial Condition:
+            Initial Temperature: 2   
+            Input Power Density: 2            
+
+Simulation:
+    Step Time: 0.1
+    Number of Steps: 1000
